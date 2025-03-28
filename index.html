@@ -12,7 +12,6 @@
   <link rel="stylesheet" href="cards.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css?family=Tajawal:wght@300&display=swap" rel="stylesheet">
-  <script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js"></script>
   <style>
     :root {
       --primary-color: #FF6666;
@@ -112,6 +111,24 @@
       <p class="counter-text"><span class="counterStat">...</span></p>
     </div>
   </footer>
+
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.5.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.5.0/firebase-analytics.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyCoGPQdp7trvwCRlFOZwFxfos2ibqLDlNg",
+      authDomain: "skip-s.firebaseapp.com",
+      projectId: "skip-s",
+      storageBucket: "skip-s.appspot.com",
+      messagingSenderId: "529359395241",
+      appId: "1:529359395241:web:8ef5435ec9c21eca630cb8",
+      measurementId: "G-9VZL64PC1W"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
 
   <script src="config.js"></script>
   <script src="home.js"></script>
