@@ -14,7 +14,7 @@ firebase.initializeApp(config);
 document.addEventListener('DOMContentLoaded', function() {
   var dViews = document.querySelector('.CountViews');
   var dCounter = dViews.querySelector('.counterStat');
-  var dDatabase = firebase.database().ref('web/views/fast_ay9_dev');
+  var dDatabase = firebase.database().ref('web/views/https://nvkq.github.io/skip/');
 
   dDatabase.on('value', function (snap) {
     var data = snap.val() || 0;
