@@ -75,7 +75,8 @@ function loadInstructionsView() {
 }
 
 function toggleHome() {
-    window.location.href = '/';
+    console.log("جاري التوجيه إلى الرئيسية...");
+    window.location.href = 'https://nvkq.github.io/skip';
 }
 
 function toggleTheme() {
